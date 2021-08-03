@@ -1,6 +1,6 @@
-package com.projectlearning.service;
+package com.projectlearning.base.service;
 
-import com.projectlearning.dto.MemberDTO;
+import com.projectlearning.base.dto.MemberDTO;
 
 public interface MemberService {
 	

@@ -1,4 +1,4 @@
-package com.projectlearning.dto;
+package com.projectlearning.base.dto;
 
 public class MemberDTO {
 	

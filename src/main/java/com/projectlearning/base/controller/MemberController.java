@@ -1,11 +1,11 @@
-package com.projectlearning.controller;
+package com.projectlearning.base.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.projectlearning.dto.MemberDTO;
-import com.projectlearning.service.impl.MemberServiceImpl;
+import com.projectlearning.base.dto.MemberDTO;
+import com.projectlearning.base.service.impl.MemberServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController

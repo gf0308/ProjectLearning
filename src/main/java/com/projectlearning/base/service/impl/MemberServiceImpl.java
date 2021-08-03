@@ -1,10 +1,10 @@
-package com.projectlearning.service.impl;
+package com.projectlearning.base.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.projectlearning.dto.MemberDTO;
-import com.projectlearning.mapper.MemberMapper;
-import com.projectlearning.service.MemberService;
+import com.projectlearning.base.dto.MemberDTO;
+import com.projectlearning.base.mapper.MemberMapper;
+import com.projectlearning.base.service.MemberService;
 
 import lombok.extern.slf4j.Slf4j;
 

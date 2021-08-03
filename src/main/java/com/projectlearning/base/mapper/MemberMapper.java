@@ -1,8 +1,8 @@
-package com.projectlearning.mapper;
+package com.projectlearning.base.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
+import com.projectlearning.base.dto.MemberDTO;
 
-import com.projectlearning.dto.MemberDTO;
 
 @Mapper
 public interface MemberMapper {
