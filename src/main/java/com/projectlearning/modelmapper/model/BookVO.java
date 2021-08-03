@@ -9,6 +9,6 @@ public class BookVO {
 	private String title;
 	private String author;
 	private CurrencyType currencyType;
-	private Date createAt;
+	private String createAt;
 	private Long price;
 }

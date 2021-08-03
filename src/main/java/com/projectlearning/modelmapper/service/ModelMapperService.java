@@ -1,6 +1,7 @@
 package com.projectlearning.modelmapper.service;
 
 import org.modelmapper.ModelMapper;
+import org.modelmapper.PropertyMap;
 import org.springframework.stereotype.Service;
 import com.projectlearning.modelmapper.model.BookDTO;
 import com.projectlearning.modelmapper.model.BookVO;
@@ -30,8 +31,17 @@ public class ModelMapperService {
 	}
 	
 	
-	public BookVO test_use_model_mapper(BookDTO bookDTO) {
+	public BookVO testModelMapper(BookDTO bookDTO) {
+		// 두 객체 간 다른필드명의 필드들도 매핑시켜주기 위한 처리 작업 : PropertyMap<source, destination>
+		PropertyMap<BookDTO, BookVO> propertyMap = new PropertyMap<BookDTO, BookVO>() {
+			@Override
+			protected void configure() {
+				map().setCreateAt(source.getPublishedAt());
+			}
+		};
 		ModelMapper modelMapper = new ModelMapper();
+		modelMapper.addMappings(propertyMap);
+		
 		BookVO bookVO = modelMapper.map(bookDTO, BookVO.class);
 		
 		return bookVO;
