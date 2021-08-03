@@ -21,6 +21,4 @@ public class MemberServiceImpl implements MemberService {
 		return memberMapper.checkMember(memberDTO);
 	}
 	
-	
-	
 }
